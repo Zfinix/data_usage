@@ -5,7 +5,7 @@ Data Usage gets Mobile/Wifi data usage values from mobile devices, on android it
 ## Screen Shots
 
 <p float="left">
-<img src="https://github.com/Zfinix/data_usage/blob/master/1.png?raw=true" width="200">
+<img src="https://github.com/Zfinix/data_usage/blob/main/1.png?raw=true" width="200">
 </p>
 
 ## Usage for Android
