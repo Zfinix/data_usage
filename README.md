@@ -2,10 +2,15 @@
 
 Data Usage gets Mobile/Wifi data usage values from mobile devices, on android it will fetch the data app by app but due to current limitations on ios it can only give the total/complete valeus of overall data used.
 
+## Screen Shots
+
+<p float="left">
+<img src="https://github.com/Zfinix/data_usage/blob/master/1.png?raw=true" width="200">
+</p>
+
 ## Usage for Android
 
     - Initialize plugin and requests for permission
-
     - Request Data usage stats
 
     ```dart
