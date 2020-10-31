@@ -45,7 +45,7 @@ Data Usage gets Mobile/Wifi data usage values from mobile devices, on android it
  Request for Total data usage on iOS devices
 
    ```dart
-     Future<IOSDataUsageModel> dataUsage = await DataUsage.dataUsageIOS();
+     IOSDataUsageModel dataUsage = await DataUsage.dataUsageIOS();
    ```
 
  This would return:
