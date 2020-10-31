@@ -38,6 +38,8 @@ Data Usage gets Mobile/Wifi data usage values from mobile devices, on android it
 
 [For more explanation](https://stackoverflow.com/questions/17674790/how-do-i-programmatically-show-data-usage-of-all-applications/29084035)
 
+
+
 ## Usage for iOS
 
  Request for Total data usage on iOS devices
