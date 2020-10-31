@@ -1,6 +1,6 @@
 # Data Usage
 
-Data Usage gets Mobile/Wifi data usage values from mobile devices, on android it will fetch the data app by app but due to current limitations on ios it can only give the total/complete valeus of overall data used.
+Data Usage gets Mobile/Wifi data usage values from mobile devices, on android it will fetch the data per app but due to current limitations on ios it can only give the total/complete values of overall data used.
 
 ## Screen Shots
 
