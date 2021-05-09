@@ -28,18 +28,25 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    super.initState();
     initPlatformState();
+    super.initState();
   }
 
   Future<void> initPlatformState() async {
     List<DataUsageModel> dataUsage;
     IOSDataUsageModel dataiOSUsage;
     try {
-      await DataUsage.init();
+      print(await DataUsage.init());
+
+      print('''dataUsage''');
       dataUsage = await DataUsage.dataUsageAndroid(
-          withAppIcon: true, dataUsageType: DataUsageType.wifi);
+        withAppIcon: true,
+        dataUsageType: DataUsageType.wifi,
+      );
+
       dataiOSUsage = await DataUsage.dataUsageIOS();
+
+      print(dataUsage);
     } catch (e) {
       print(e.toString());
     }
@@ -63,7 +70,7 @@ class _HomeState extends State<Home> {
         child: Platform.isAndroid
             ? Android(dataUsage: _dataUsage, size: size)
             : Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: _dataiOSUsage
                         ?.toJson()
                         ?.entries
@@ -135,12 +142,12 @@ class Android extends StatelessWidget {
                       Row(
                         children: [
                           Text(
-                            'Received: ${item.received}  ',
+                            'Received: ${(item.received / 1048576).toStringAsFixed(4)}MB  ',
                             style: TextStyle(
                                 color: Colors.grey[700], fontSize: 13),
                           ),
                           Text(
-                            'Sent: ${item.sent}',
+                            'Sent: ${(item.sent / 1048576).toStringAsFixed(4)}MB',
                             style: TextStyle(
                                 color: Colors.grey[700], fontSize: 13),
                           ),

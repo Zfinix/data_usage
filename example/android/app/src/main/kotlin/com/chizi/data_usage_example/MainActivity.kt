@@ -1,4 +1,4 @@
-package com.data_usage.data_usage_example
+package com.chizi.data_usage_example
 
 import io.flutter.embedding.android.FlutterActivity
 

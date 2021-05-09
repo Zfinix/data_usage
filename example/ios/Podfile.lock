@@ -2,27 +2,27 @@ PODS:
   - data_usage (0.0.1):
     - Flutter
   - Flutter (1.0.0)
-  - permissions_plugin (0.0.1):
+  - "permission_handler (5.1.0+2)":
     - Flutter
 
 DEPENDENCIES:
   - data_usage (from `.symlinks/plugins/data_usage/ios`)
   - Flutter (from `Flutter`)
-  - permissions_plugin (from `.symlinks/plugins/permissions_plugin/ios`)
+  - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
 
 EXTERNAL SOURCES:
   data_usage:
     :path: ".symlinks/plugins/data_usage/ios"
   Flutter:
     :path: Flutter
-  permissions_plugin:
-    :path: ".symlinks/plugins/permissions_plugin/ios"
+  permission_handler:
+    :path: ".symlinks/plugins/permission_handler/ios"
 
 SPEC CHECKSUMS:
   data_usage: 1fc8b53c583117a9277c59e15f48f316297a843a
-  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  permissions_plugin: 98cd73ca0d2e7ab845e3d0efdd29ef2737ffa27c
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  permission_handler: ccb20a9fad0ee9b1314a52b70b76b473c5f8dab0
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 
-COCOAPODS: 1.10.0.beta.2
+COCOAPODS: 1.10.1

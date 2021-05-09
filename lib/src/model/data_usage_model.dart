@@ -3,11 +3,11 @@ import 'dart:convert';
 import 'dart:typed_data';
 
 class DataUsageModel {
-  String appName;
-  String packageName;
-  Uint8List appIconBytes;
-  int received;
-  int sent;
+  String? appName;
+  String? packageName;
+  Uint8List? appIconBytes;
+  int? received;
+  int? sent;
 
   DataUsageModel({
     this.appName,

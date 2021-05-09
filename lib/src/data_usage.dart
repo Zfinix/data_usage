@@ -2,7 +2,6 @@ import 'dart:async';
 import 'dart:io';
 import 'package:data_usage/src/model/data_usage_model.dart';
 import 'package:flutter/services.dart';
-import 'package:permissions_plugin/permissions_plugin.dart';
 
 import 'model/ios_data_usage_model.dart';
 
@@ -13,22 +12,7 @@ class DataUsage {
   static const MethodChannel _channel = const MethodChannel('data_usage');
 
   /// Initializes plugin and requests for permission
-  static Future<bool> init() async {
-    try {
-      final permission = await PermissionsPlugin.checkPermissions(
-          [Permission.READ_PHONE_STATE]);
-
-      if (permission[Permission.READ_PHONE_STATE] != PermissionState.GRANTED) {
-        await PermissionsPlugin.requestPermissions(
-            [Permission.READ_PHONE_STATE]);
-        return await init();
-      } else {
-        return await _channel.invokeMethod('init');
-      }
-    } catch (e) {
-      return false;
-    }
-  }
+  static Future<bool?> init() async => await _channel.invokeMethod('init');
 
   ///Gets Data Usage From Android Device as `Future<List<DataUsageModel>>`
   ///
