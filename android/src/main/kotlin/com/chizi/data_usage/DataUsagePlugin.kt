@@ -105,7 +105,7 @@ class DataUsagePlugin : FlutterPlugin, MethodCallHandler, ActivityAware,
 
     private fun requestPermission() {
         ActivityCompat.requestPermissions(activity!!,
-                arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), myPermissionCode)
+                arrayOf(Manifest.permission.READ_PHONE_STATE), myPermissionCode)
 
     }
 
